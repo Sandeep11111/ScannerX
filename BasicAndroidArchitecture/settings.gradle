@@ -1,0 +1,2 @@
+include ':app', ':myfeaturemodule', ':networkutilmodule'
+rootProject.name='BasicAndroidArchitecture'
