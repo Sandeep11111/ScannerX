@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Dagger2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Kotlin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LottieDemo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/NYCSchools-master" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RecyclerViewWithBindingAdapter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RxAndroidTest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RxJavaDaggerRetrofitMVP" vcs="Git" />
+  </component>
+</project>
