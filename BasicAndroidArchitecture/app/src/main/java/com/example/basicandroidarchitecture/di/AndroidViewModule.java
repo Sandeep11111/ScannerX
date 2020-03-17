@@ -1,5 +1,6 @@
 package com.example.basicandroidarchitecture.di;
 
+import com.example.basicandroidarchitecture.ui.DetailActivity;
 import com.example.basicandroidarchitecture.ui.MainActivity;
 
 import dagger.Module;
@@ -10,4 +11,7 @@ public abstract class AndroidViewModule {
 
     @ContributesAndroidInjector
     abstract MainActivity bindMainActivity();
+
+    @ContributesAndroidInjector
+    abstract DetailActivity bindDetailActivity();
 }
