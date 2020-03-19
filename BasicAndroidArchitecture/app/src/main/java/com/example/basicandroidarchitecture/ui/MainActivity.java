@@ -1,6 +1,7 @@
 package com.example.basicandroidarchitecture.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import dagger.android.AndroidInjection;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
@@ -11,6 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.basicandroidarchitecture.R;
+import com.example.basicandroidarchitecture.databinding.ActivityMainBinding;
 import com.example.basicandroidarchitecture.viewmodel.MainActivityViewModel;
 import com.example.myfeaturemodule.models.DummyResponse;
 import com.example.myfeaturemodule.service.MyFeatureService;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         getLifecycle().addObserver(mainActivityViewModel);
 
         //observe launch activity event
+
         mainActivityViewModel.launchDetailActivity.observe(this, launchActivityEvent -> {
             if (!launchActivityEvent.isEventHasBeenHandled()) {
                 startActivity( new Intent(this, (Class)launchActivityEvent.getContentIfEventNotHandled()));

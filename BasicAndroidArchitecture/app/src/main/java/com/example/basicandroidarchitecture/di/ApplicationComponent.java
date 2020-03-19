@@ -7,6 +7,7 @@ import com.example.networkutilmodule.NetworkUtilModule;
 import javax.inject.Singleton;
 
 import dagger.Component;
+import dagger.android.AndroidInjector;
 import dagger.android.support.AndroidSupportInjectionModule;
 
 @Singleton
@@ -16,7 +17,7 @@ import dagger.android.support.AndroidSupportInjectionModule;
         MyFeatureModule.class,
         NetworkUtilModule.class
 })
-public interface ApplicationComponent {
+public interface ApplicationComponent extends AndroidInjector<BasicAppApplication> {
 
     void inject(BasicAppApplication basicAppApplication);
 }
