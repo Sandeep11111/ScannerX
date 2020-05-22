@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.app.Fragment;
 
-import com.example.basicapp.dependencyinjection.DaggerApplicationComponent;
+import com.example.sampleapplicationforgm.dependencyinjection.DaggerApplicationComponent;
 
 import javax.inject.Inject;
 

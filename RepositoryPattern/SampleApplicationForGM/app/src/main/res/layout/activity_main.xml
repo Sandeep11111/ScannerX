@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <variable
-            name="mainActivityViewModel"
+            name="viewModel"
             type="com.example.sampleapplicationforgm.viewmodel.MainActivityViewModel"/>
 
         <import type="android.view.View" />
@@ -22,7 +22,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:onClick="@{() -> mainActivityViewModel.doApiCall()}"
+            android:onClick="@{() -> viewModel.doApiCall()}"
             tools:text="Sample text"/>
 
         <TextView
@@ -33,7 +33,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/button"
             android:text="loading ..."
-            android:visibility="@{mainActivityViewModel.shouldShowDescription ? View.VISIBLE : View.GONE}"
+            android:visibility="@{viewModel.shouldShowDescription ? View.VISIBLE : View.GONE}"
             />
 
         <Button
@@ -44,7 +44,7 @@
             app:layout_constraintTop_toBottomOf="@id/loadingText"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:onClick="@{() -> mainActivityViewModel.launchDetailScreen()}"
+            android:onClick="@{() -> viewModel.launchDetailScreen()}"
             tools:text="launch"/>
 
 

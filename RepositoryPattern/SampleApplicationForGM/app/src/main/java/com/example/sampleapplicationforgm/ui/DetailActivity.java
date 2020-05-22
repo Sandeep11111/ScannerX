@@ -3,11 +3,13 @@ package com.example.sampleapplicationforgm.ui;
 import android.os.Bundle;
 
 import com.example.sampleapplicationforgm.R;
+import com.example.sampleapplicationforgm.databinding.ActivityDetailBinding;
 import com.example.sampleapplicationforgm.viewmodel.DetailActivityViewModel;
 
 import javax.inject.Inject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import dagger.android.AndroidInjection;
 
 public class DetailActivity extends AppCompatActivity {

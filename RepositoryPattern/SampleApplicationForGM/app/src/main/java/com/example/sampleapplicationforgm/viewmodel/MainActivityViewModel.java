@@ -3,6 +3,7 @@ package com.example.sampleapplicationforgm.viewmodel;
 import com.example.myfeature.MyFeatureService;
 import com.example.myfeature.models.DummyResponse;
 import com.example.sampleapplicationforgm.event.LaunchActivityEvent;
+import com.example.sampleapplicationforgm.ui.DetailActivity;
 
 import java.util.List;
 

@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.sampleapplicationforgm.R;
+import com.example.sampleapplicationforgm.databinding.ActivityMainBinding;
 import com.example.sampleapplicationforgm.viewmodel.MainActivityViewModel;
 
 import javax.inject.Inject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import dagger.android.AndroidInjection;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        binding.setMainActivityViewModel(mainActivityViewModel);
+        binding.setViewModel(mainActivityViewModel);
         binding.setLifecycleOwner(this);
         getLifecycle().addObserver(mainActivityViewModel);
 
