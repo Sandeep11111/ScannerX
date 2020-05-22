@@ -5,7 +5,7 @@
     <data>
         <variable
             name="detailActivityViewModel"
-            type="com.example.basicapp.viewmodel.DetailActivityViewModel"/>
+            type="com.example.sampleapplicationforgm.viewmodel.DetailActivityViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -1,9 +1,8 @@
 package com.example.sampleapplicationforgm.viewmodel;
 
-import com.example.basicapp.event.LaunchActivityEvent;
-import com.example.basicapp.ui.DetailActivity;
 import com.example.myfeature.MyFeatureService;
 import com.example.myfeature.models.DummyResponse;
+import com.example.sampleapplicationforgm.event.LaunchActivityEvent;
 
 import java.util.List;
 

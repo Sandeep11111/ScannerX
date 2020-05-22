@@ -5,7 +5,7 @@
     <data>
         <variable
             name="mainActivityViewModel"
-            type="com.example.basicapp.viewmodel.MainActivityViewModel"/>
+            type="com.example.sampleapplicationforgm.viewmodel.MainActivityViewModel"/>
 
         <import type="android.view.View" />
 
